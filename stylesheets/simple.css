@@ -1,0 +1,221 @@
+
+body {
+	font: 90%/1.5 Georgia,serif;/*‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;*//*‘Times New Roman’, Times, serif;*/
+	background-color:#e3e3e3;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	outline:0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	
+	margin-top: 0;	
+	padding-right: 3px;
+	padding-left: 3px; 
+}
+h3{
+	font-family: ‘Times New Roman’, Times,serif;
+	margin-top:5px;
+	}
+a:link {
+	color: #;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+#header {
+	background: #222;
+	/*-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;*/
+	margin-bottom: 10px;
+	width:100%;
+	height:50px;
+	text-align: center;
+	border-bottom: 1px solid;
+}
+.header h1{
+     
+
+	-moz-text-shadow: 0 0 5px #335599;
+	-webkit-text-shadow: 0 0 5px #335599;
+	text-shadow: 0 0 5px #335599; 
+	text-decoration: none;
+	}
+	
+.header a{
+	  font-family: Century Gothic,sans-serif;	
+	  color:#335599;
+	}	
+#sidebar{
+	float: left;
+	width: 15%;
+	border-radius: 5px;
+	background: #fff;
+	-webkit-box-shadow: -5px 0 10px -6px #666;
+	-moz-box-shadow: -5px 0 10px -6px #666;
+	box-shadow: -5px 0 10px -6px #666;
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, serif;	
+   color: #333;
+   margin-left:20px;
+   line-height: 20px;
+   padding-left: 10px;
+}
+
+.content {
+   /*border: 1px solid;*/
+	padding-left: 8%;
+	width: 70%;
+	float: left;
+
+	}
+.content a, h2{
+   /*border: 1px solid;*/
+   color: #335599
+	} 
+.content a:hover{
+	color:#009900;
+}
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	 /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	 margin-bottom: 5px; /* this creates the space between the navigation on the content below */
+ 
+}
+ul.nav li {
+	 /* this creates the button separation */
+   list-style: none;
+}
+
+ul.nav a{
+	color:#335599
+}
+ul.nav a:hover, a:active{
+	color:#333;
+	}
+
+#main-nav-entries, #main-nav-links, #main-nav-categories, #main-nav-tags{
+	font-weight: bold;	
+	}
+#main-nav-year li,#main-nav-cat li,#main-nav-tag li{
+	padding-left: 20px;			
+	font-weight: normal;
+	} 
+	
+#whatis p{
+  font-family: ‘Times New Roman’, Times, serif;
+  color: #666;
+	}
+#whatis a{
+	color:#335599;
+	}	
+#whatis ul {
+	list-style: none; /* this removes the list marker */
+	 /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	 margin-bottom: 5px; /* this creates the space between the navigation on the content below */
+ 
+}
+#whatis ul li {
+	 /* this creates the button separation */
+   list-style: none;
+}
+	
+#whatis ul a, ul a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+ 
+
+	/*padding: 5px 5px 5px 10px;*/
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background: #fff;
+	color:#336699;
+}
+#whatis ul a:hover, ul a:active, ul a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background:#fff ;
+	color: #333;
+}
+
+#gpaDisplay {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #333;
+  width: 50%;
+  color: #333;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+   box-shadow: 0 0 5px #888;
+}
+
+#gpa{
+ color: #fff;
+ background-color: #222; 
+ border-radius: 3px;
+}
+
+#contentTable{
+   border-style: solid;
+   border-width: 3px;
+   width: 85%;
+   height: 315px;
+   border-color: #333;
+   -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+   box-shadow: 0 0 5px #888;
+}
+#contentTable th{
+  color: #333;
+}
+
+#contentTable td{
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+#contentTable th{
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+
+}
+
+#form1{
+  text-align: center;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+   box-shadow: 0 0 5px #888;
+   width: 40%;
+}
+
+#label{
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+

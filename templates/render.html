@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<link rel="stylesheet" href="/stylesheets/simple.css" type="text/css"> 
+<title>{{ name }} | Marksheet</title>
+</head>
+<body>
+<div id="header" >
+<h1><a href="/"> GPA Calculator - Anna University </a></h1>
+</div>
+
+<center>
+<div id="form">    
+    <form action="/sign" method="post" name="inputform" onsubmit="return validate()">
+      <div id="label"><label>Register No : <input type="number" name="content" placeholder="Your Register No."/></label>
+      <input type="submit" value="Get-My-GPA, Computer Ji!" ></div>
+    </form>
+</div>
+</center>
+
+<center><div id="gpaDisplay"> <h3> {{ name }}! Your GPA is <span id="gpa"> {{ GPA }} </span> </h3> </div></center>
+<div id="contentTableContainer">
+	<table id="contentTable"  align="center">
+		   <tr>
+			   <th> Subject Code </th>
+			   <th> Credit </th>
+			   <th> Grade </th>
+			   <th> Result </th>
+		   </tr>
+		{% for item in lis %}
+			<tr>
+				
+				<td> {{ item.subject }} </td>
+				<td> {{ item.credit }}</td>
+				<td> {{ item.grade }} </td>
+				<td> {{ item.result }} </td>
+				
+		    </tr>
+		{% endfor %}
+	</table>	
+</div>
+</body>
+</html>
+
+	
+
