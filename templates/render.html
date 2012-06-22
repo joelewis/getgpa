@@ -6,6 +6,18 @@
 <title>{{ name }} | Marksheet</title>
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="wrapper">
 <div id="header" >
 <h1><a href="/"> GPA Calculator - Anna University </a></h1>
 </div>
@@ -17,11 +29,12 @@
       <input type="submit" value="Get-My-GPA, Computer Ji!" ></div>
     </form>
 </div>
+
 </center>
 
 <center><div id="gpaDisplay"> <h3> {{ name }}! Your GPA is <span id="gpa"> {{ GPA }} </span> </h3> </div></center>
 <div id="contentTableContainer">
-	<table id="contentTable"  align="center">
+<center>	<table id="contentTable" >
 		   <tr>
 			   <th> Subject Code </th>
 			   <th> Credit </th>
@@ -38,7 +51,15 @@
 				
 		    </tr>
 		{% endfor %}
-	</table>	
+	</table> </center>	
+</div>
+<center style="margin-top:10px;"><div class="fb-like" data-href="http://getgpa.appspot.com/sign" data-send="false" data-width="450" data-show-faces="true"></div></center>
+<div class="push">
+	
+</div>	
+</div>
+<div class="footer">
+<p> Copyright © 2012 Joe Lewis -powered by Google App Engine </p>
 </div>
 </body>
 </html>
