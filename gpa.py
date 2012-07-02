@@ -32,7 +32,16 @@ class RenderMarksheet(webapp2.RequestHandler):
   def post(self):
     reg = self.request.get('content')  
     regstr = str(reg)
-    rawlink="http://result.annauniv.edu/cgi-bin/result/result11gr.pl?regno="  
+    stripped = regstr.lstrip()
+    length = stripped.__len__()
+    rawlink = ""
+    if(length == 12):
+      rawlink = "http://result.annauniv.edu/cgi-bin/result/firstsemgr.pl?regno="
+    elif (length == 11):
+      if (stripped[3]+stripped[4] == '09'):
+        rawlink="http://result.annauniv.edu/cgi-bin/result/result11gr.pl?regno="  
+      elif (stripped[3]+stripped[4] == '08'):
+	rawlink = "http://result.annauniv.edu/cgi-bin/result/resultgrade.pl?regno=" 
     link =rawlink+regstr
     flag = 0
    
